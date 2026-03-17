@@ -1,0 +1,145 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar  7 2026 14:25:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0adb8h ( 44472) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ade0 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=0001cf40 vaddr=40080000 size=030d8h ( 12504) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1a7a8h (108456) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=0003a7d0 vaddr=400830d8 size=09e00h ( 40448) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (209) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu up.[0m
+[0;32mI (209) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (227) cpu_start: Pro cpu start user code[0m
+[0;32mI (227) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (227) cpu_start: Application information:[0m
+[0;32mI (232) cpu_start: Project name:     cnc[0m
+[0;32mI (237) cpu_start: App version:      1[0m
+[0;32mI (241) cpu_start: Compile time:     Mar  7 2026 14:25:42[0m
+[0;32mI (247) cpu_start: ELF file SHA256:  d85d15b599cf2224...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (267) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (272) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB29D0 len 0002D630 (181 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (312) spi_flash: detected chip: generic[0m
+[0;32mI (315) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+=== Command and Control ===
+Commands: echo, pin-high, pin-low, pin-read, reverse
+
+> hello esp32
+I'm sorry, but I don't recognize the command 'hello'. My sincerest apologies.
+
+> ew
+I'm sorry, but I don't recognize the command 'ew'. My sincerest apologies.
+
+> 13
+I'm sorry, but I don't recognize the command '13'. My sincerest apologies.
+
+> echo hello, world
+hello, world
+
+> echo one , two, three
+one , two, three
+
+> pin-high 13
+[0;32mI (65297) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set HIGH
+
+> GPIO 13 set LOW
+I'm sorry, but I don't recognize the command 'GPIO'. My sincerest apologies.
+
+> [A[A[B[Bpin-low 13
+I'm sorry, but I don't recognize the command '[A[A[B[Bpin-low'. My sincerest apologies.
+
+> pin-low-13
+I'm sorry, but I don't recognize the command 'pin-low-13'. My sincerest apologies.
+
+> pin-high 13
+[0;32mI (116827) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set HIGH
+
+> pin-low 13
+[0;32mI (126477) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set LOW
+
+> [A[Bpin-high 13
+I'm sorry, but I don't recognize the command '[A[Bpin-high'. My sincerest apologies.
+
+> pin-high 13
+[0;32mI (229017) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set HIGH
+
+> pin -low 13
+I'm sorry, but I don't recognize the command 'pin'. My sincerest apologies.
+
+> pin-low 13
+[0;32mI (267827) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set LOW
+
+> pin-high 13
+[0;32mI (275087) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set HIGH
+
+> pin-low 13
+[0;32mI (282957) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set LOW
+
+> pin-read 27
+[0;32mI (315177) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+0
+
+> pin-read 27
+[0;32mI (364867) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+1
+
+> pin-high 13
+[0;32mI (380297) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set HIGH
+
+> pin-read 27
+[0;32mI (389767) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+0
+
+> pin-read 27
+[0;32mI (413267) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+1
+
+> pin-low 13
+[0;32mI (1502527) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+GPIO 13 set LOW
+
+> 

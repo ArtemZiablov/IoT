@@ -1,0 +1,169 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 10 2026 15:57:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b188h ( 45448) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b1b0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b1bc vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001d31c vaddr=40080000 size=02cfch ( 11516) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1b278h (111224) map[0m
+[0;32mI (184) esp_image: segment 5: paddr=0003b2a0 vaddr=40082cfc size=0a1dch ( 41436) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu up.[0m
+[0;32mI (220) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) cpu_start: Application information:[0m
+[0;32mI (242) cpu_start: Project name:     guessing[0m
+[0;32mI (247) cpu_start: App version:      1[0m
+[0;32mI (252) cpu_start: Compile time:     Mar 10 2026 15:56:54[0m
+[0;32mI (258) cpu_start: ELF file SHA256:  ec6c695a762a96b9...[0m
+[0;32mI (264) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (269) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (273) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (278) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (283) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (290) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFB29F8 len 0002D608 (181 KiB): DRAM[0m
+[0;32mI (302) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (315) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (323) spi_flash: detected chip: generic[0m
+[0;32mI (326) spi_flash: flash io: dio[0m
+[0;33mW (330) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (344) app_start: Starting scheduler on CPU0[0m
+[0;32mI (348) app_start: Starting scheduler on CPU1[0m
+[0
+Shall we play a game? (y/n): y
+
+I am thinking about a number between 0 and 4095 (both included).
+I bet you can't guess it in 12 tries!
+
+You have guessed 0 times. Please try again: 2048
+Too high!
+
+You have guessed 1 time. Please try again: 1024
+Too low!
+
+You have guessed 2 times. Please try again: 156074
+Too high!
+
+You have guessed 3 times. Please try again: 1287
+Too low!
+
+You have guessed 4 times. Please try again: 1450
+Too high!
+
+You have guessed 5 times. Please try again: 1420
+Too high!
+
+You have guessed 6 times. Please try again: 1400
+Too high!
+
+You have guessed 7 times. Please try again: 1285[D9
+Too low!
+
+You have guessed 8 times. Please try again: 130050
+Too high!
+
+You have guessed 9 times. Please try again: 1325
+Too high!
+
+You have guessed 10 times. Please try again: 1300
+Too high!
+
+You have guessed 11 times. Please try again: 1299
+Too high!
+
+You've used all 12 tries. The number was 1297.
+A strange game. The only winning move is not to play.
+
+Shall we play a game? (y/n): n
+Goodbye!
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 10 2026 15:57:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b188h ( 45448) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b1b0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b1bc vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001d31c vaddr=40080000 size=02cfch ( 11516) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1b278h (111224) map[0m
+[0;32mI (183) esp_image: segment 5: paddr=0003b2a0 vaddr=40082cfc size=0a1dch ( 41436) load[0m
+[0;32mI (207) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu up.[0m
+[0;32mI (219) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (207) cpu_start: App cpu up.[0m
+[0;32mI (237) cpu_start: Pro cpu start user code[0m
+[0;32mI (238) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) cpu_start: Application information:[0m
+[0;32mI (242) cpu_start: Project name:     guessing[0m
+[0;32mI (247) cpu_start: App version:      1[0m
+[0;32mI (252) cpu_start: Compile time:     Mar 10 2026 15:56:54[0m
+[0;32mI (258) cpu_start: ELF file SHA256:  ec6c695a762a96b9...[0m
+[0;32mI (264) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (269) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (273) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (278) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (283) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (290) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFB29F8 len 0002D608 (181 KiB): DRAM[0m
+[0;32mI (302) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (315) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (323) spi_flash: detected chip: generic[0m
+[0;32mI (326) spi_flash: flash io: dio[0m
+[0;33mW (330) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (344) app_start: Starting scheduler on CPU0[0m
+[0;32mI (348) app_start: Starting scheduler on CPU1[0m
+[0
+Shall we play a game? (y/n): 

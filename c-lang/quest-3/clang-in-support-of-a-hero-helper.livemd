@@ -1,0 +1,147 @@
+# In Support of a Hero
+
+```elixir
+Mix.install([
+  {:kino, "~> 0.18.0"}
+])
+```
+
+## Introduction
+
+This notebook is intended for verifying the calculated distances of sequences of cities in **Quest 3** of the C exercises.
+
+**Instructions:** Go to the [user interface](#user-interface) section, evaluate the first cell, and enter your sequence of cities. Then evaluate the rest of the cells.
+
+## Config
+
+No need to touch the config.
+
+```elixir
+default_sequence =
+  """
+  Esbjerg
+  Herning
+  Silkeborg
+  Viborg
+  Aalborg
+  Randers
+  Århus
+  Helsingør
+  København
+  Roskilde
+  Næstved
+  Odense
+  Horsens
+  Vejle
+  Kolding
+  """
+```
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+city2index =
+  """
+  "Esbjerg",
+  "Helsingør",
+  "Herning",
+  "Horsens",
+  "Kolding",
+  "København",
+  "Næstved",
+  "Odense",
+  "Randers",
+  "Roskilde",
+  "Silkeborg",
+  "Vejle",
+  "Viborg",
+  "Aalborg",
+  "Århus",
+  """
+  |> String.split("\n")
+  |> Enum.map(fn name -> name |> String.trim(",") |> String.trim("\"") end)
+  |> Enum.filter(fn name -> name != "" end)
+  |> Enum.with_index()
+  |> Map.new()
+```
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+data =
+  """
+  { 0, 269, 82, 98, 65, 260, 211, 123, 149, 230, 105, 74, 126, 198, 134},
+  {269, 0, 226, 173, 206, 40, 105, 157, 166, 55, 191, 196, 207, 200, 150},
+  { 82, 226, 0, 63, 79, 230, 202, 121, 76, 202, 36, 59, 45, 117, 77},
+  { 98, 173, 63, 0, 48, 172, 139, 62, 68, 142, 40, 26, 75, 132, 40},
+  { 65, 206, 79, 48, 0, 196, 148, 59, 114, 165, 77, 25, 110, 176, 88},
+  {260, 40, 230, 172, 196, 0, 71, 141, 180, 31, 196, 190, 218, 224, 156},
+  {211, 105, 202, 139, 148, 71, 0, 89, 174, 50, 175, 150, 204, 232, 142},
+  {123, 157, 121, 62, 59, 141, 89, 0, 121, 110, 102, 64, 136, 186, 86},
+  {149, 166, 76, 68, 114, 180, 174, 121, 0, 156, 44, 90, 42, 65, 36},
+  {230, 55, 202, 142, 165, 31, 50, 110, 156, 0, 169, 160, 193, 206, 130},
+  {105, 191, 36, 40, 77, 196, 175, 102, 44, 169, 0, 53, 35, 99, 41},
+  { 74, 196, 59, 26, 25, 190, 150, 64, 90, 160, 53, 0, 86, 151, 65},
+  {126, 207, 45, 75, 110, 218, 204, 136, 42, 193, 35, 86, 0, 72, 63},
+  {198, 200, 117, 132, 176, 224, 232, 186, 65, 206, 99, 151, 72, 0, 101},
+  {134, 150, 77, 40, 88, 156, 142, 86, 36, 130, 41, 65, 63, 101, 0},
+  """
+  |> String.split("\n")
+  |> Enum.filter(fn line -> line != "" end)
+  |> Enum.map(fn line ->
+    line
+    |> String.slice(1..-3//1)
+    |> String.split(",")
+    |> Enum.map(&String.trim/1)
+    |> Enum.map(&String.to_integer/1)
+    end)
+```
+
+## Code
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+defmodule Checker do
+  def lookup_dist(data, city2index, from, to) do
+    from = Map.get(city2index, from)
+    to = Map.get(city2index, to)
+    data
+    |> Enum.at(from)
+    |> Enum.at(to)
+  end
+  
+  def check(data, city2index, sequence) do
+    [Enum.at(sequence, -1)|sequence]
+    |> Enum.chunk_every(2, 1, :discard)
+    |> Enum.reduce(0, fn [from, to], acc -> acc + lookup_dist(data, city2index, from, to) end)
+  end
+end
+```
+
+## User Interface
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+kino = Kino.Input.textarea("Sequence:", default: default_sequence)
+```
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+sequence =
+  kino
+  |> Kino.Input.read()
+  |> String.split("\n")
+  |> Enum.map(&String.trim/1)
+  |> Enum.filter(fn entry -> entry != "" end)
+```
+
+<!-- livebook:{"reevaluate_automatically":true} -->
+
+```elixir
+Checker.check(data, city2index, sequence)
+```
+
+And that is the distance of the sequence!
