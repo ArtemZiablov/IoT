@@ -1,0 +1,192 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 17 2026 18:27:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09940h ( 39232) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019968 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=00019974 vaddr=3ffb0000 size=02100h (  8448) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=0001ba7c vaddr=40080000 size=0459ch ( 17820) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14b7ch ( 84860) map[0m
+[0;32mI (172) esp_image: segment 5: paddr=00034ba4 vaddr=4008459c size=07a60h ( 31328) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400810f0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     temperature[0m
+[0;32mI (231) cpu_start: App version:      87325c4-dirty[0m
+[0;32mI (237) cpu_start: Compile time:     Mar 17 2026 18:27:20[0m
+[0;32mI (243) cpu_start: ELF file SHA256:  854e6c7948846a4a...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (254) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (258) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (263) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (268) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (275) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFB2998 len 0002D668 (181 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (300) heap_init: At 4008C000 len 00014000 (80 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32mI (333) app_start: Starting scheduler on CPU1[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) TEMPERATURE: ADC1 Channel 7 initialized (GPIO 35)[0m
+2123
+2095
+2128
+2138
+2096
+2112
+2154
+2127
+2123
+2128
+2118
+2129
+2131
+2121
+2129
+2135
+2117
+2129
+2128
+2122
+2128
+2128
+2127
+2123
+2128
+2134
+2112
+2121
+2130
+2128
+2131
+2149
+2115
+2125
+2128
+2129
+2128
+2122
+2128
+2117
+2128
+2128
+2123
+2127
+2128
+2127
+2094
+2127
+2126
+2128
+2125
+2123
+2126
+2127
+2112
+2128
+2123
+2124
+2125
+2119
+2128
+2119
+2162
+2121
+2128
+2127
+2125
+2127
+2119
+2175
+2128
+2118
+2128
+2125
+2127
+2127
+2122
+2126
+2123
+2111
+2128
+2128
+2125
+2123
+2125
+2121
+2123
+2142
+2115
+2128
+2127
+2122
+2127
+2125
+2126
+2128
+2061
+2119
+2123
+2125
+2126
+2126
+2122
+2125
+2130
+2108
+2142
+2123
+2130
+2128
+2126
+2128
+2125
+2125
+2117
+2144
+2119
+2128
+2127
+2128
+2122
+2127
+2127
+2122
+2129
+2128
+2112
+2127
+2128

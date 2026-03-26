@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/CMakeFiles/bootloader"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/CMakeFiles/bootloader.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

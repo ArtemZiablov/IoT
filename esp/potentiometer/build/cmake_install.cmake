@@ -1,4 +1,4 @@
-# Install script for directory: /Users/artemziablov/esp/potentiometer
+# Install script for directory: /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/artemziablov/esp/potentiometer/build/esp-idf/cmake_install.cmake")
+  include("/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/esp-idf/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/artemziablov/esp/potentiometer/build/install_local_manifest.txt"
+  file(WRITE "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/artemziablov/esp/potentiometer/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/CMakeFiles/bootloader
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/CMakeFiles/bootloader.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/CMakeFiles/bootloader-complete.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/pipelined-sample-transmit/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

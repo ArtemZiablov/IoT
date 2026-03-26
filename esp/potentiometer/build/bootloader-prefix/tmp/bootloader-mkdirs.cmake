@@ -10,18 +10,18 @@ if(NOT EXISTS "/Users/artemziablov/esp/esp-idf/components/bootloader/subproject"
   file(MAKE_DIRECTORY "/Users/artemziablov/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/artemziablov/esp/potentiometer/build/bootloader"
-  "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix"
-  "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/tmp"
-  "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src"
-  "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader"
+  "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix"
+  "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/tmp"
+  "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src"
+  "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/artemziablov/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

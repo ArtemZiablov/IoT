@@ -1,4 +1,4 @@
-/* * Data converted from /Users/artemziablov/esp/potentiometer/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/potentiometer/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
