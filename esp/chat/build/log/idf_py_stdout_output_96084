@@ -1,0 +1,104 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/sdkconfig
+-- App "chat" version: 6e089217-dirty
+-- Adding linker script /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /Users/artemziablov/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/artemziablov/esp/esp-idf/components/app_trace /Users/artemziablov/esp/esp-idf/components/app_update /Users/artemziablov/esp/esp-idf/components/bootloader /Users/artemziablov/esp/esp-idf/components/bootloader_support /Users/artemziablov/esp/esp-idf/components/bt /Users/artemziablov/esp/esp-idf/components/cmock /Users/artemziablov/esp/esp-idf/components/console /Users/artemziablov/esp/esp-idf/components/cxx /Users/artemziablov/esp/esp-idf/components/driver /Users/artemziablov/esp/esp-idf/components/efuse /Users/artemziablov/esp/esp-idf/components/esp-tls /Users/artemziablov/esp/esp-idf/components/esp_adc /Users/artemziablov/esp/esp-idf/components/esp_app_format /Users/artemziablov/esp/esp-idf/components/esp_coex /Users/artemziablov/esp/esp-idf/components/esp_common /Users/artemziablov/esp/esp-idf/components/esp_eth /Users/artemziablov/esp/esp-idf/components/esp_event /Users/artemziablov/esp/esp-idf/components/esp_gdbstub /Users/artemziablov/esp/esp-idf/components/esp_hid /Users/artemziablov/esp/esp-idf/components/esp_http_client /Users/artemziablov/esp/esp-idf/components/esp_http_server /Users/artemziablov/esp/esp-idf/components/esp_https_ota /Users/artemziablov/esp/esp-idf/components/esp_https_server /Users/artemziablov/esp/esp-idf/components/esp_hw_support /Users/artemziablov/esp/esp-idf/components/esp_lcd /Users/artemziablov/esp/esp-idf/components/esp_local_ctrl /Users/artemziablov/esp/esp-idf/components/esp_mm /Users/artemziablov/esp/esp-idf/components/esp_netif /Users/artemziablov/esp/esp-idf/components/esp_netif_stack /Users/artemziablov/esp/esp-idf/components/esp_partition /Users/artemziablov/esp/esp-idf/components/esp_phy /Users/artemziablov/esp/esp-idf/components/esp_pm /Users/artemziablov/esp/esp-idf/components/esp_psram /Users/artemziablov/esp/esp-idf/components/esp_ringbuf /Users/artemziablov/esp/esp-idf/components/esp_rom /Users/artemziablov/esp/esp-idf/components/esp_system /Users/artemziablov/esp/esp-idf/components/esp_timer /Users/artemziablov/esp/esp-idf/components/esp_wifi /Users/artemziablov/esp/esp-idf/components/espcoredump /Users/artemziablov/esp/esp-idf/components/esptool_py /Users/artemziablov/esp/esp-idf/components/fatfs /Users/artemziablov/esp/esp-idf/components/freertos /Users/artemziablov/esp/esp-idf/components/hal /Users/artemziablov/esp/esp-idf/components/heap /Users/artemziablov/esp/esp-idf/components/http_parser /Users/artemziablov/esp/esp-idf/components/idf_test /Users/artemziablov/esp/esp-idf/components/ieee802154 /Users/artemziablov/esp/esp-idf/components/json /Users/artemziablov/esp/esp-idf/components/log /Users/artemziablov/esp/esp-idf/components/lwip /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/main /Users/artemziablov/esp/esp-idf/components/mbedtls /Users/artemziablov/esp/esp-idf/components/mqtt /Users/artemziablov/esp/esp-idf/components/newlib /Users/artemziablov/esp/esp-idf/components/nvs_flash /Users/artemziablov/esp/esp-idf/components/openthread /Users/artemziablov/esp/esp-idf/components/partition_table /Users/artemziablov/esp/esp-idf/components/perfmon /Users/artemziablov/esp/esp-idf/components/protobuf-c /Users/artemziablov/esp/esp-idf/components/protocomm /Users/artemziablov/esp/esp-idf/components/pthread /Users/artemziablov/esp/esp-idf/components/sdmmc /Users/artemziablov/esp/esp-idf/components/soc /Users/artemziablov/esp/esp-idf/components/spi_flash /Users/artemziablov/esp/esp-idf/components/spiffs /Users/artemziablov/esp/esp-idf/components/tcp_transport /Users/artemziablov/esp/esp-idf/components/ulp /Users/artemziablov/esp/esp-idf/components/unity /Users/artemziablov/esp/esp-idf/components/usb /Users/artemziablov/esp/esp-idf/components/vfs /Users/artemziablov/esp/esp-idf/components/wear_levelling /Users/artemziablov/esp/esp-idf/components/wifi_provisioning /Users/artemziablov/esp/esp-idf/components/wpa_supplicant /Users/artemziablov/esp/esp-idf/components/xtensa
+-- Configuring done (2.4s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/bootloader/esp-idf/esptool_py && /Users/artemziablov/.espressif/python_env/idf5.1_py3.13_env/bin/python /Users/artemziablov/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/bootloader/bootloader.bin
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/hl_wifi.c.obj
+[5/11] Linking C static library esp-idf/main/libmain.a
+[6/11] Generating ld/sections.ld
+[7/11] Linking CXX executable chat.elf
+[8/11] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/chat.bin
+[9/11] cd /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/esp-idf/esptool_py && /Users/artemziablov/.espressif/python_env/idf5.1_py3.13_env/bin/python /Users/artemziablov/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/partition_table/partition-table.bin /Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build/chat.bin
+chat.bin binary size 0xd6ab0 bytes. Smallest app partition is 0x100000 bytes. 0x29550 bytes (16%) free.
+[9/11] cd /Users/artemziablov/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/artemziablov/esp/esp-idf -D "SERIAL_TOOL=/Users/artemziablov/.espressif/python_env/idf5.1_py3.13_env/bin/python;;/Users/artemziablov/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/artemziablov/Desktop/SDU-2-semester/Software_Technology_for_Internet_of_Things/Exercises/esp/chat/build -P /Users/artemziablov/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-1110 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 chat.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port /dev/cu.usbserial-1110
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 20:e7:c8:b2:63:9c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26640 bytes to 16686...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768e... (100 %)
+Wrote 26640 bytes (16686 compressed) at 0x00001000 in 0.6 seconds (effective 332.5 kbit/s)...
+Hash of data verified.
+Compressed 879280 bytes to 566693...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c5f9... (5 %)
+Writing at 0x000250ab... (8 %)
+Writing at 0x0002a3fa... (11 %)
+Writing at 0x00034128... (14 %)
+Writing at 0x0003c49a... (17 %)
+Writing at 0x00042171... (20 %)
+Writing at 0x00047a27... (22 %)
+Writing at 0x0004d08c... (25 %)
+Writing at 0x00052b8e... (28 %)
+Writing at 0x0005805b... (31 %)
+Writing at 0x0005d823... (34 %)
+Writing at 0x000631ac... (37 %)
+Writing at 0x00068a7a... (40 %)
+Writing at 0x0006e4b8... (42 %)
+Writing at 0x00073e71... (45 %)
+Writing at 0x0007a479... (48 %)
+Writing at 0x0007fef2... (51 %)
+Writing at 0x0008585d... (54 %)
+Writing at 0x0008adfd... (57 %)
+Writing at 0x00090075... (60 %)
+Writing at 0x00095518... (62 %)
+Writing at 0x0009a809... (65 %)
+Writing at 0x0009fec5... (68 %)
+Writing at 0x000a5703... (71 %)
+Writing at 0x000ab278... (74 %)
+Writing at 0x000b088e... (77 %)
+Writing at 0x000b6224... (80 %)
+Writing at 0x000bbd62... (82 %)
+Writing at 0x000c14cb... (85 %)
+Writing at 0x000c9ecc... (88 %)
+Writing at 0x000d2944... (91 %)
+Writing at 0x000d8423... (94 %)
+Writing at 0x000de0e0... (97 %)
+Writing at 0x000e3620... (100 %)
+Wrote 879280 bytes (566693 compressed) at 0x00010000 in 13.7 seconds (effective 513.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 379.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

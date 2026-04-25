@@ -1,0 +1,108 @@
+NDc_Br32mI (720) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (720 phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 18 2026 17:56:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=245cch (148940) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000345f4 vaddr=3ffb0000 size=03acch ( 15052) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=000380c8 vaddr=40080000 size=07f50h ( 32592) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=98d80h (626048) map[0m
+[0;32mI (404) esp_image: segment 4: paddr=000d8da8 vaddr=40087f50 size=0dcech ( 56556) load[0m
+[0;32mI (439) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (439) boot: Disabling RNG early entropy source...[0m
+[0;32mI (451) cpu_start: Multicore app[0m
+[0;32mI (451) cpu_start: Pro cpu up.[0m
+[0;32mI (451) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (474) cpu_start: Project name:     chat[0m
+[0;32mI (478) cpu_start: App version:      6e089217-dirty[0m
+[0;32mI (484) cpu_start: Compile time:     Apr 18 2026 18:05:27[0m
+[0;32mI (490) cpu_start: ELF file SHA256:  6d691a63480948a5...[0m
+[0;32mI (496) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (501) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (505) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (510) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (515) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (522) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (528) heap_init: At 3FFB8150 len 00027EB0 (159 KiB): DRAM[0m
+[0;32mI (535) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (541) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (547) heap_init: At 40095C3C len 0000A3C4 (40 KiB): IRAM[0m
+[0;32mI (555) spi_flash: detected chip: generic[0m
+[0;32mI (558) spi_flash: flash io: dio[0m
+[0;33mW (562) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (576) app_start: Starting scheduler on CPU0[0m
+[0;32mI (580) app_start: Starting scheduler on CPU1[0m
+[0;32mI (580) main_task: Started on CPU0[0m
+[0;32mI (590) main_task: Calling app_main()[0m
+[0;32mI (620) main: Initializing WiFi...[0m
+[0;32mI (640) wifi:wifi driver task: 3ffc0148, prio:23, stack:6656, core=0[0m
+[0;32mI (650) wifi:wifi firmware version: 91b9630[0m
+[0;32mI (650) wifi:wifi certification version: v7.0[0m
+[0;32mI (650) wifi:config NVS flash: enabled[0m
+[0;32mI (650) wifi:config nano formating: disabled[0m
+[0;32mI (660) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (660) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (670) wifi:Init management short buffer num: 32[0m
+[0;32mI (670) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (680) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (680) wifi:Init static rx buffer num: 10[0m
+[0;32mI (680) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (690) wifi_init: rx ba win: 6[0m
+[0;32mI (690) wifi_init: tcpip mbox: 32[0m
+[0;32mI (700) wifi_init: udp mbox: 6[0m
+[0;32mI (700) wifi_init: tcp mbox: 6[0m
+[0;32mI (700) wifi_init: tcp tx win: 5744[0m
+[0;32mI (710) wifi_init: tcp rx win: 5744[0m
+[0;32mI (710) wifi_init: tcp mss: 1440[0m
+[0;32mI (720) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (720) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (730) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (810) wifi:mode : sta (20:e7:c8:b2:63:9c)[0m
+[0;32mI (810) wifi:enable tsf[0m
+[0;32mI (810) hl_wifi: wifi_init_sta finished.[0m
+[0;32mI (820) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (820) wifi:state: init -> auth (b0)[0m
+[0;32mI (880) wifi:state: auth -> assoc (0)[0m
+[0;32mI (900) wifi:state: assoc -> run (10)[0m
+[0;32mI (930) wifi:connected with iPhone Artem, aid = 2, channel 6, BW20, bssid = ce:67:f5:e2:73:43[0m
+[0;32mI (930) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (940) wifi:pm start, type: 1[0m
+
+[0;32mI (1020) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1940) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1940) hl_wifi: got ip:172.20.10.2[0m
+[0;32mI (1940) main: WiFi connected![0m
+Enter your nickname (max 9 chars): Welcome, !
+[0;32mI (1950) main: Connecting to MQTT broker at mqtt://broker.hivemq.com...[0m
+Receiving hits!
+[0;32mI (1950) hl_wifi: connected to ap SSID:iPhone Artem[0m
+[0;32mI (1960) main_task: Returned from app_main()[0m
+[0;32mI (1970) wifi:<ba-add>idx:0 (ifx:0, ce:67:f5:e2:73:43), tid:0, ssn:2, winSize:64[0m
+Receiving hits!
